@@ -1,0 +1,148 @@
+@media only screen and (min-width: 376px) {
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .open-menu-btn {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-desktop>ul {
+        margin: 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-desktop>ul>li>a {
+        color: var(--white);
+        margin: 0 1em;
+        font-size: 18px;
+    }
+
+    .nav-desktop>ul>li:last-of-type>a {
+        font-family: 'Fraunces', serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        background-color: var(--white);
+        color: var(--dark-desat-blue);
+        padding: .9em 1.4em;
+        border-radius: 55px;
+    }
+
+    .nav-desktop>ul>li:last-of-type>a:hover {
+        background-color: var(--t-white);
+        color: var(--white);
+    }
+
+    header {
+        background-image: url('../images/desktop/image-header.jpg');
+        height: 90vh;
+    }
+
+    .hero>h1 {
+        font-size: 54px;
+        margin: 1.6em 0;
+    }
+
+    .transform, .info-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .learn-more>picture>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .transform>div, .stand-out>div {
+        align-self: center;
+    }
+
+    .transform>div>p {
+        padding: 0 3em;
+    }
+
+    .learn-more>div>a  {
+        width: 120px;
+    }
+
+    .stand-out {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .transform>picture {
+        grid-column: 2;
+    }
+
+    .transform>div {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .learn-more:first-of-type>div>a:hover {
+        border-bottom: 6px solid var(--yellow);
+    }
+    
+    .learn-more:nth-of-type(2)>div>a:hover {
+        border-bottom: 6px solid var(--soft-red);
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .graphic-design {
+        background: url('../images/desktop/image-graphic-design.jpg') no-repeat top center;
+        background-size: cover;
+    }
+    
+    .photography {
+        background: url('../images/desktop/image-photography.jpg') no-repeat top center;
+        background-size: cover;
+    }
+
+    .testimonials>h2 {
+        margin-top: 6em;
+        font-size: 20px;
+    }
+
+    .testimonials-flex {
+        display: flex;
+        gap: 10px;
+        padding: 0 7em;
+        margin-bottom: 3em;
+    }
+
+    .testimonial {
+        padding: 0 .8em;
+    }
+
+    .client-feedback {
+        margin: 4em auto;
+        font-size: 17px;
+    }
+
+    .img-gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-footer, .socials-footer {
+        width: 20vw;
+        margin: 0 auto;
+    }
+
+    .nav-footer>ul>li>a:hover {
+        color: var(--white);
+    }
+
+    .socials-footer img:hover {
+        filter: brightness(600%);
+    }
+}
